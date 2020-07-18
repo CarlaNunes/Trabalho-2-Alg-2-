@@ -1,4 +1,5 @@
 #include "funcoes.h"
+#include "grafo.h"
 
 int main(int argc, char *argv[])
 {
@@ -7,9 +8,13 @@ int main(int argc, char *argv[])
 
     printf("Carregando...\n");
 
-    /*Iniciar TAD aqui e passar para a função carrega_grafo*/
+    tgrafo *grafo;
+    if (!cria_grafo(grafo)) {
+        printf("Erro ao criar grafo\n");
+        return EXIT_FAILURE;
+    }
     
-    if (!carrega_grafo(/*PONTEIRO_PARA_O_GRAFO*/)){
+    if (!carrega_grafo(grafo)){
         printf("Erro ao carregar informações\n");
         return EXIT_FAILURE;
     }
@@ -18,6 +23,7 @@ int main(int argc, char *argv[])
         /*Loop principal*/
     /* } */
 
-    /*Finalizar TAD aqui*/
+    deleta_grafo(grafo);
+    printf("Bye-bye!\n");
     return EXIT_SUCCESS;
 }

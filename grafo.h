@@ -2,11 +2,10 @@
 #define NULO NULL
 
 
-typedef int tvertice;
-
 typedef struct{
-    tvertice vertice;
-     char peso[60];//Para colocar o nome do filme
+    char nome[15];
+    char sobrenome[15];
+    char peso[30];//O nome do filme
     struct taresta *prox;
 }taresta;
 
@@ -15,4 +14,5 @@ typedef taresta* tapontador;
 typedef struct{
     tapontador vet[MAXNUMVERTICES];
     int num_vertices;
+
 }tgrafo;

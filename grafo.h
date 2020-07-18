@@ -1,12 +1,12 @@
 #define MAXNUMVERTICES 100
 #define NULO NULL
 
-typedef char peso[30];//O nome do filme
+
 typedef int tvertice;
 
 typedef struct{
     tvertice vertice;
-    tpeso peso;
+     char peso[60];//Para colocar o nome do filme
     struct taresta *prox;
 }taresta;
 

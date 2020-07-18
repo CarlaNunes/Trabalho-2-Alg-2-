@@ -3,11 +3,14 @@
 
 
 typedef struct{
-    char nome[15];
-    char sobrenome[15];
     char peso[30];//O nome do filme
     struct taresta *prox;
 }taresta;
+
+typedef struct{
+    char nome[15];
+    char sobrenome[15];
+}tvertice;
 
 typedef taresta* tapontador;
 
@@ -16,3 +19,4 @@ typedef struct{
     int num_vertices;
 
 }tgrafo;
+

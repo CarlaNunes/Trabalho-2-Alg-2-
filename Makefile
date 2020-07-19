@@ -1,2 +1,3 @@
 all:
-	gcc *.c -ansi
+	# gcc *.c -ansi
+	gcc *.c 

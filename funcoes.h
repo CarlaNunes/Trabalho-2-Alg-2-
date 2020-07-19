@@ -18,5 +18,5 @@
  * }nome;
  */
 
-int carrega_grafo(tgrafo *grafo);
+int carrega_grafo(tgrafo **grafo);
 #endif

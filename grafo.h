@@ -16,7 +16,7 @@ typedef struct vertice{
     //A variavél,vai definir se tivermos um ator A com relação a outros atores ela irá aplicar o critério de Desempate.
     //Se o ator B não tiver um nome maior que A a variavél terá valor igual a 1 e o ator será inserido no vértice, caso contrário
     //Teremos um velor igual a Zero e o ator Seguinte será escolhido.Temos um critério de desempate.
-    // int ehEm ordem;
+    // int ehEmordem;
     taresta *aresta;
 }tvertice;
 
